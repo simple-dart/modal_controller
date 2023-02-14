@@ -1,3 +1,7 @@
+## 0.0.5
+
+- Fix position `absolute`
+
 ## 0.0.4
 
 - Rename `opacity` to `shading`

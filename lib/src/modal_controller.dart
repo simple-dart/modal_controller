@@ -26,7 +26,8 @@ class ModalController {
     onClick.listen((event) {
       close();
     });
-    component.element.style.background = 'rgba(0, 0, 0, ${shading.toString()})';
+    modalPanel.element.style.background = 'rgba(0, 0, 0, ${shading.toString()})';
+    component.element.style.position = 'absolute';
     if (left != null) {
       component.element.style.left = '${left}px';
     } else {
