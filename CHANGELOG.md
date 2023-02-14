@@ -1,3 +1,7 @@
+## 0.0.3
+
+- fix type of `opacity` parameter in `showModal` method
+
 ## 0.0.2
 
 - Added parameters opacity, left, top in showModal method

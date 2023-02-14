@@ -22,7 +22,7 @@ class ModalController {
     _onClick.sink.add(event);
   }
 
-  void showModal(Component component, {int? opacity, int? left, int? top}) {
+  void showModal(Component component, {double? opacity, int? left, int? top}) {
     onClick.listen((event) {
       close();
     });
