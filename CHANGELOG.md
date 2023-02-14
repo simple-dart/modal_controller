@@ -1,3 +1,7 @@
+## 0.0.4
+
+- Rename `opacity` to `shading`
+
 ## 0.0.3
 
 - fix type of `opacity` parameter in `showModal` method

@@ -22,16 +22,11 @@ class ModalController {
     _onClick.sink.add(event);
   }
 
-  void showModal(Component component, {double? opacity, int? left, int? top}) {
+  void showModal(Component component, {int? left, int? top, double shading = 0.75}) {
     onClick.listen((event) {
       close();
     });
-    component.element.style.position = 'absolute';
-    if (opacity != null) {
-      modalPanel.element.style.opacity = opacity.toString();
-    } else {
-      modalPanel.element.style.opacity = '';
-    }
+    component.element.style.background = 'rgba(0, 0, 0, ${shading.toString()})';
     if (left != null) {
       component.element.style.left = '${left}px';
     } else {
