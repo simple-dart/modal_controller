@@ -1,3 +1,7 @@
+## 0.0.6
+
+- Added parameters' bottom and right in showModal method
+
 ## 0.0.5
 
 - Fix position `absolute`
@@ -12,7 +16,7 @@
 
 ## 0.0.2
 
-- Added parameters opacity, left, top in showModal method
+- Added parameters' opacity, left, top in showModal method
 
 ## 0.0.1
 
