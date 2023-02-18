@@ -1,3 +1,7 @@
+## 0.0.7
+
+- change top, bottom, left, right to `String?` type
+
 ## 0.0.6
 
 - Added parameters' bottom and right in showModal method

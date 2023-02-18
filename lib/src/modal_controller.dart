@@ -22,29 +22,30 @@ class ModalController {
     _onClick.sink.add(event);
   }
 
-  void showModal(Component component, {int? top, int? left, int? bottom, int? right, double shading = 0.75}) {
+  void showModal(Component component,
+      {String? top, String? left, String? bottom, String? right, double shading = 0.75}) {
     onClick.listen((event) {
       close();
     });
     modalPanel.element.style.background = 'rgba(0, 0, 0, ${shading.toString()})';
     component.element.style.position = 'absolute';
     if (top != null) {
-      component.element.style.top = '${top}px';
+      component.element.style.top = top;
     } else {
       component.element.style.top = '';
     }
     if (left != null) {
-      component.element.style.left = '${left}px';
+      component.element.style.left = left;
     } else {
       component.element.style.left = '';
     }
     if (bottom != null) {
-      component.element.style.bottom = '${bottom}px';
+      component.element.style.bottom = bottom;
     } else {
       component.element.style.bottom = '';
     }
     if (right != null) {
-      component.element.style.right = '${right}px';
+      component.element.style.right = right;
     } else {
       component.element.style.right = '';
     }
